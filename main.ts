@@ -193,7 +193,7 @@ function toStr(z:Zipper<boolean>):Zipper<string> {
 
 var pre = document.body.querySelector('pre');
 function log<a>(n:number, z:Zipper<a>) {
-	var l = toArray(take(n, z.l)).reverse().join('');
+    var l = toArray(take(n, z.l)).reverse().join('');
     var c = head(z);
     var r = toArray(take(n, z.r)).join('');
     pre.appendChild(document.createTextNode(l + c + r + '\n'));
